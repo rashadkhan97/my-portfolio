@@ -200,7 +200,7 @@ export const experience = [
   },
 ];
 
-// Projects.jsx; the six course assignments, ordered by hiring demand. link goes to the GitHub repository
+// Projects.jsx; the course projects (the blog backend and frontend are one card), ordered by hiring demand. link goes to the GitHub repository
 // (or elsewhere); linkLabel is optional and defaults to "View on GitHub"
 export const projects = [
   {
@@ -232,31 +232,17 @@ export const projects = [
     link: "https://github.com/rashadkhan97/dMoney_Postman-API-with-Newman_B19",
   },
   {
-    label: "API Development",
-    category: "Node.js · Express · MySQL",
-    title: "Blog Management REST API",
-    description:
-      "A REST API for a blog with Admin, User and Guest access levels.",
-    bullets: [
-      "JWT login, bcrypt-hashed passwords, and role checks with owner-or-admin rules for editing posts.",
-      "13 endpoints with title and category search, on MySQL through Sequelize.",
-      "Postman collection with documentation.",
-    ],
-    tags: ["Node.js", "Express", "MySQL", "Sequelize", "JWT"],
-    link: "https://github.com/rashadkhan97/Blog-Application-REST-API-Development",
-  },
-  {
-    label: "Full-Stack Frontend",
-    category: "Next.js · Tailwind CSS",
+    label: "Full-Stack Development",
+    category: "Next.js · Node.js · MySQL",
     title: "Blog Management Website",
     description:
       "A full-stack blog where guests read and search, users manage their posts, and admins manage everything.",
     bullets: [
-      "Next.js 16, React 19 and Tailwind CSS 4, connected to the REST API with no mock data.",
-      "Registration, login, password reset by email, and avatar upload.",
-      "Admin tools to manage every blog and activate or deactivate users.",
+      "Next.js 16, React 19 and Tailwind CSS 4 frontend, connected to its own REST API with no mock data.",
+      "REST API on Node.js, Express and MySQL (Sequelize): JWT login, bcrypt-hashed passwords, role checks, and 13 endpoints with title and category search.",
+      "Registration, login, password reset by email and avatar upload, plus admin tools to manage every blog and user.",
     ],
-    tags: ["Next.js", "React", "Tailwind CSS", "REST API"],
+    tags: ["Next.js", "React", "Tailwind CSS", "Node.js", "Express", "MySQL", "JWT"],
     link: "https://github.com/rashadkhan97/blogsite-using-NextJS-and-Tailwind",
   },
   {
