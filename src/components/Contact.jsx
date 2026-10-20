@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="max-w-[1200px] mx-auto px-4 pt-24">
-      <SectionHeading title="Get In Touch" />
+      <SectionHeading title="Get in Touch" />
       <div className="grid lg:grid-cols-2 gap-10 card p-6 md:p-10">
         <div className="flex flex-col gap-6">
           <div>

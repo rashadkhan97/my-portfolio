@@ -22,7 +22,7 @@ export const contact = {
     "Hi Rashadul, I found your portfolio and would like to talk.",
   eyebrow: "Let's connect",
   heading: "Let's build something reliable.",
-  text: "Actively looking for QA and SDET opportunities. I reply to every message.",
+  text: "I'm actively looking for QA and SDET opportunities. I reply to every message.",
   location: "Dhaka, Bangladesh",
 };
 
@@ -88,7 +88,7 @@ export const about = {
   heading: "Software engineer who builds and tests",
   paragraphs: [
     "I'm Rashadul, a software engineer based in Dhaka. I'm early in my career, and I've worked on both sides of the job: building web applications and making sure they work. I can build a feature, then test it the way a user would, through the interface and through the API.",
-    "I write automated tests, look for defects, and report them clearly so they can be fixed quickly. I use AI tools to understand unfamiliar code, track down bugs and draft test scenarios, and I always check what they give me myself. I mostly work with JavaScript, TypeScript, React and Node.js, and I test with Postman, Playwright and Selenium.",
+    "I write automated tests, look for defects, and report them clearly so they can be fixed quickly. I use AI tools to understand unfamiliar code, track down bugs, and draft test scenarios, and I always check what they give me myself. I mostly work with JavaScript, TypeScript, React, and Node.js, and I test with Postman, Playwright, and Selenium.",
     "I'm looking for a team where I can build and test together, and grow into a well-rounded software engineer. I'm especially interested in SDET roles, because I like caring about the whole product, not just one part of it.",
   ],
   cards: [
@@ -140,7 +140,7 @@ export const skillGroups = [
       "API Test Automation",
       "Git",
       "GitHub",
-      "CI/CD Fundamentals",
+      // "CI/CD Fundamentals", // hidden for now; remove the // to show it again
       "Docker Fundamentals",
       "Basic Linux",
       "Basic Deployment",

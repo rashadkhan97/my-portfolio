@@ -57,7 +57,7 @@ const Education = () => {
 
       <h3 className={subHeading + " mb-6"}>
         <span className="text-gold">{icons.bsc}</span>
-        Academic Degree
+        Academic Degrees
       </h3>
 
       {/* journey strip hidden for now; remove "hidden" to show it again */}
@@ -120,7 +120,7 @@ const Education = () => {
         <>
           <h3 className={subHeading + " mt-16 mb-10"}>
             <FiAward className="text-gold text-xl" />
-            Courses &amp; Certificates
+            Courses &amp; Certifications
           </h3>
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-x-6 gap-y-10">
             {certifications.map((cert, index) => (
