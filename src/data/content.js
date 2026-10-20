@@ -232,6 +232,20 @@ export const projects = [
     link: "https://github.com/rashadkhan97/dMoney_Postman-API-with-Newman_B19",
   },
   {
+    label: "Integration Testing",
+    category: "Mocha · Chai · Axios",
+    title: "dMoney API Integration Tests with Mocha and Axios",
+    description:
+      "An integration test suite for the dMoney transaction flow, from admin login and user onboarding to deposits, money transfer, cash-out and merchant payment, run against a local API server.",
+    bullets: [
+      "21 chained scenarios in one Mocha spec, each reusing tokens and IDs from the earlier steps.",
+      "Checks status codes, messages and fee rules: 2.5% agent commission, a flat 5 tk send-money fee, and the larger of 1% or 5 tk on cash-out and payment.",
+      "Random phone numbers and emails on every run, plus OTP login steps for each user.",
+    ],
+    tags: ["Mocha", "Chai", "Axios", "Node.js", "Integration Testing"],
+    link: "https://github.com/rashadkhan97/API-Integration-Testing-with-Mocha-and-Axios",
+  },
+  {
     label: "Full-Stack Development",
     category: "Next.js · Node.js · MySQL",
     title: "Blog Management Website",
