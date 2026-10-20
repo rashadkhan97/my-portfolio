@@ -134,19 +134,6 @@ export const skillGroups = [
     ],
   },
   {
-    title: "Automation & Engineering",
-    items: [
-      "UI Test Automation",
-      "API Test Automation",
-      "Git",
-      "GitHub",
-      // "CI/CD Fundamentals", // hidden for now; remove the // to show it again
-      "Docker Fundamentals",
-      "Basic Linux",
-      "Basic Deployment",
-    ],
-  },
-  {
     title: "AI-Assisted Software Engineering",
     items: [
       "AI-Assisted Coding",
@@ -158,6 +145,19 @@ export const skillGroups = [
       "Context Engineering",
       "Requirement Analysis",
       "Troubleshooting",
+    ],
+  },
+  {
+    title: "Automation & Engineering",
+    items: [
+      "UI Test Automation",
+      "API Test Automation",
+      "Git",
+      "GitHub",
+      // "CI/CD Fundamentals", // hidden for now; remove the // to show it again
+      "Docker Fundamentals",
+      "Basic Linux",
+      "Basic Deployment",
     ],
   },
   {
