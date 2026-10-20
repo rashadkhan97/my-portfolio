@@ -4,18 +4,8 @@ import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoLocationOutline } from "react-icons/io5";
 import { profile, contact } from "../data/content";
+import { whatsappLink, gmailLink } from "../utils/links";
 import SectionHeading from "./SectionHeading";
-
-// wa.me link built from profile.phone; opens WhatsApp with contact.whatsappMessage pre-filled
-const whatsappLink = `https://wa.me/${profile.phone.replace(
-  "+",
-  ""
-)}?text=${encodeURIComponent(contact.whatsappMessage)}`;
-
-// opens a Gmail compose window addressed to profile.email (all email links below use this)
-const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-  profile.email
-)}&su=${encodeURIComponent("Hello from your portfolio")}`;
 
 // Contact: detail rows on the left, WhatsApp call-to-action on the right; copy comes from `contact` and `profile` in data/content.js
 const Contact = () => {
