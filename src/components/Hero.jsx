@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FiDownload } from "react-icons/fi";
 import { fadeIn } from "../framerMotion/variants";
 import { profile } from "../data/content";
 import ProfilePhoto from "./ProfilePhoto";
+import CvViewer from "./CvViewer";
 
 // shared look for the Download CV button, whether it is a real download link or the placeholder button
 const cvButtonClass =
@@ -11,6 +13,7 @@ const cvButtonClass =
 
 // editorial hero: big name + pitch on the left, photo on the right
 const Hero = () => {
+  const [cvOpen, setCvOpen] = useState(false); // true while the CV pop-up (CvViewer) is showing
   return (
     <section id="home" className="pt-40 pb-16 px-4">
       <div className="max-w-[1200px] mx-auto flex md:flex-row flex-col items-center justify-between gap-12">
@@ -30,10 +33,15 @@ const Hero = () => {
           <p className="text-muted text-lg max-w-[520px]">{profile.pitch}</p>
           <div className="mt-2 flex flex-wrap gap-3 justify-center md:justify-start">
             {profile.cv ? (
-              <a href={profile.cv} download className={cvButtonClass}>
+              // opens the CV pop-up first; the real download button lives inside CvViewer.jsx
+              <button
+                type="button"
+                onClick={() => setCvOpen(true)}
+                className={cvButtonClass}
+              >
                 <FiDownload />
                 Download CV
-              </a>
+              </button>
             ) : (
               // no CV file yet: the button stays visible but does nothing (see cv in data/content.js)
               <button
@@ -67,6 +75,7 @@ const Hero = () => {
           <ProfilePhoto loop className="h-[380px] w-[280px]" />
         </motion.div>
       </div>
+      {cvOpen && <CvViewer onClose={() => setCvOpen(false)} />}
     </section>
   );
 };

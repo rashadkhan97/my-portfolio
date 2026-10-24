@@ -10,7 +10,7 @@ export const profile = {
   email: "rsrashad99@gmail.com",
   phone: "+8801959981909", // international format; used for tel: and the WhatsApp link
   phoneDisplay: "+880 1959 981909",
-  cv: null, // no CV yet: the Download CV button stays visible but does nothing. To make it work: save the PDF as public/my_cv/Md-Rashadul-Islam-CV.pdf and set this to "/my_cv/Md-Rashadul-Islam-CV.pdf"
+  cv: "/my_cv/Md-Rashadul-Islam-CV.pdf", // file in public/my_cv/; Download CV shows it in a pop-up first (CvViewer.jsx), download is inside the pop-up. Set to null to show a do-nothing button
   photo: "/images/profile.webp", // smaller copy of profile.png (kept as the original); file lives in public/images/; set to null to show initials instead
   github: "https://github.com/rashadkhan97",
   linkedin: "https://www.linkedin.com/in/rashadkhan97",
